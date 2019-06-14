@@ -1,60 +1,41 @@
 $(document).ready(function () {
-
-
-  var numToChange = ["1", "2", "3"];
-
   $('#beginbutton').click(function (event) {
-
-    var message = ($('input#original').val()).split(' ');
-
-    console.log(message);
-
-  var list = [];
-  var lowEnd = 0;
-  console.log(lowEnd)
-  var highEnd = (message)
-  console.log(highEnd)
-  for (var i = lowEnd; i <= highEnd; i++) {
-
-    list.push(i);
-    console.log(list)
     event.preventDefault();
+    // var numToChange = ["1", "2", "3"];
+    var input = parseInt($('input#original').val());
+    console.log(input);
 
-    //       if (numTwoChange.includes(message[index])) {
-    //
-    //         message.splice(index, 1, "-")
-    //
-    //       };
-    //
-    //     };
-    //
-    //     var output = message.join("")
-    //
-    //     $(".result").text(output);
-    //
-    //
-    // take number from array and convert to fianl state
-    //
-    if (list) "3"(true)
-      (replace)
-      "I'm sorry dave";
+    var list = [];
+    var lowEnd = 0;
+    console.log(lowEnd)
+    var highEnd = (input)
+    console.log(highEnd)
+    for (var i = lowEnd; i <= highEnd; i++) {
+      list.push(i);
+      console.log(list)
+            //
+            // if (numToChange.includes(message[index])) {
+            //   message.splice(index, 1, "-")
+            // };
+          };
+          function list(i) {
 
-    elseif (list)"2"(true)
-      (replace) "boop";
+            if (i === 3) {
+              return "I'm sorry dave"
+            }
+            else if (i ===2) {
+              return "boop";
+            }
+          }
 
-    else if number.includes "1"(true) {
-      .replace"beep";
-    }
-    else {
-      return "input"
-    }
 
-  };
-});
-});
-//
-//     for (index = 0; index < message.length; index++) {
-//
-//
-// }); //closes form
-// }); //closes doc read
+          var output = list.join("")
+         $(".result").text(output);
+      // take number from array and convert to fianl state
+
+
+    });
+  });
+
+ //closes form
+ //closes doc read
