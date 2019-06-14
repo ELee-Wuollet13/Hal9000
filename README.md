@@ -1,19 +1,19 @@
-# _{Application Name}_
+# _Hal9000_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This program turns text into fun computer speak, 6/14/19_
 
-#### By _**{List of contributors}**_
+#### By _**Everett Lee-Wuollet**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application takes numbers input by the user and converts them into a strong of numbers from zero to the entered number. it that changes any number containing a one, two or three into funny references from 2001 a space odessy._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
+* _Access the GitHub repository at https://github.com/ELee-Wuollet13/Hal9000_
+* _Use the GitClone dropdown to get copy the link to the project_
+* _using console commands navigate to the desktop and enter Git clone and paste the link_
+* _Enter the folder from the desktop and open _
 * _format_
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
