@@ -1,32 +1,28 @@
 $(document).ready(function () {
-  $('#beginbutton').click(function (event) {
+  $("#click").click(function (event) {
     event.preventDefault();
-    // var numToChange = ["1", "2", "3"];
-    var inputNum = parseInt($('input#original').val());
-    console.log(inputNum);
-
-    var array = [1, 3, 5]
-    var lowEnd = 0;
-    var highEnd = (inputNum);
-    for (var i = lowEnd; i <= highEnd; i++) {
-      array.push(i)
-    };
-    console.log(array)
-
-    array.forEach(function(number) {
-      if (number = 3) {
-        $("I'm sorry dave").show();
-        if (number = 2) {
-          $("boop").show();
-        if (number = 1) {
-          $("beep").show();
-        }
-        }
-      }
-    })
+    var input = parseInt($('input#original').val());
+    console.log(input);
+    glitch(input);
+    var result = glitch(input)
+    console.log(result)
   });
-
-  var output = array
-  $(".result").text(output);
-  // take number from array and convert to fianl state
 });
+
+var numArr = [];
+numArr.push(input)
+console.log(numArr);
+function glitch (input) {
+  for(var i=0; i <= input; i++){
+    if (i.toString().includes("3")) {
+      numArr.push("I'm sorry dave, I'm affraid I can't do that.")
+    } else if (i.toString().includes("2")) {
+      numArr.push("Boop")
+    }  else if (i.toString().includes("1")) {
+      numArr.push("Beep")
+    }
+
+    console.log(numArr);
+    return numArr;
+  }
+}
