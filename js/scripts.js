@@ -1,28 +1,29 @@
-$(document).ready(function () {
-  $("#click").click(function (event) {
+ function pingPong(goal) {
+  var output = [];
+  for (var i = 1; i <= goal; i++) {
+    if (i % 15 === 0) {
+      output.push("ping-pong");
+    } else if (i % 3 === 0) {
+      output.push("ping");
+    } else if (i % 5 === 0) {
+      output.push("pong");
+    } else  {
+      output.push(i);
+    }
+  }
+  return output;
+}
+// import { pingPong } from './ping-pong';
+
+$(document).ready(function() {
+  $('#click').click(function(event) {
     event.preventDefault();
-    var input = parseInt($('input#original').val());
-    console.log(input);
-    glitch(input);
-    var result = glitch(input)
-    console.log(result)
+    var goal = $('#original').val();
+    console.log(goal)
+    var output = pingPong(goal);
+    output.forEach(function(element) {
+      $('#solution').append("<li>" + element + "</li>");
+      console.log(output)
+    });
   });
 });
-
-var numArr = [];
-numArr.push(input)
-console.log(numArr);
-function glitch (input) {
-  for(var i=0; i <= input; i++){
-    if (i.toString().includes("3")) {
-      numArr.push("I'm sorry dave, I'm affraid I can't do that.")
-    } else if (i.toString().includes("2")) {
-      numArr.push("Boop")
-    }  else if (i.toString().includes("1")) {
-      numArr.push("Beep")
-    }
-
-    console.log(numArr);
-    return numArr;
-  }
-}
