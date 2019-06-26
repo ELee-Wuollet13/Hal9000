@@ -1,12 +1,12 @@
- function pingPong(goal) {
+ function glitch(goal) {
   var output = [];
   for (var i = 1; i <= goal; i++) {
-    if (i % 15 === 0) {
-      output.push("ping-pong");
-    } else if (i % 3 === 0) {
-      output.push("ping");
-    } else if (i % 5 === 0) {
-      output.push("pong");
+    if (i.toString().includes("3")) {
+      output.push("I'm sorry dave, I'm affraid i can't do that");
+    } else if (i.toString().includes("2")) {
+      output.push("Boop");
+    } else if (i.toString().includes("1")) {
+      output.push("Beep");
     } else  {
       output.push(i);
     }
@@ -20,7 +20,7 @@ $(document).ready(function() {
     event.preventDefault();
     var goal = $('#original').val();
     console.log(goal)
-    var output = pingPong(goal);
+    var output = glitch(goal);
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
       console.log(output)
