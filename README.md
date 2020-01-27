@@ -12,9 +12,9 @@ _This application takes numbers input by the user and converts them into a stron
 
 * _Access the GitHub repository at https://github.com/ELee-Wuollet13/Hal9000_
 * _Use the Git Clone dropdown to get copy the link to the project_
-* _using console commands navigate to the desktop and enter Git clone and paste the link_
+* _Using console commands navigate to the desktop and enter Git clone and paste the link_
 * _Enter the folder from the desktop and open it in Atom_
-* _drag the index into your web browser_
+* _Drag the index into your web browser_
 
 _This app has been tested in Google Chrome_
 
@@ -32,6 +32,5 @@ _This app was made using HTML, CSS JavaScript, jQuery and bootstrap_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
 Copyright (c) 2016 **_Everett Lee-Wuollet_**
