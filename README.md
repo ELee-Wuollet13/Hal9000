@@ -18,6 +18,13 @@ _This application takes numbers input by the user and converts them into a stron
 
 _This app has been tested in Google Chrome_
 
+## To Do List
+
+_ Apply styling:
+- Center input box and output string
+- Color output for more visibility
+- Add calculation animation
+
 ## Known Bugs
 
 _This app will display results repeatedly in the console log, but it otherwise without bugs_
